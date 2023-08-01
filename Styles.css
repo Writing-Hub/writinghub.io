@@ -1,0 +1,369 @@
+/* Common styles for both desktop and mobile */
+/* ... (Your existing styles) ... */
+
+/* Additional styles for the Money icon and container */
+/* ... (Your existing styles) ... */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-shadow: black;
+    background-color: none;
+}
+
+.banner {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 739px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center; /* Horizontally center the elements */
+    align-items: center; /* Vertically center the elements */
+    height: 100vh; /* Set the body height to 100% viewport height */
+}
+
+div.Registration {
+    background: rgba(255, 255, 255, 0.3);
+    width: 500px;
+    padding: 33px;
+    border-top: 5px solid rgb(255, 214, 6);
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.input-name input[type="submit"] {
+    /* Add some margin at the top to move the button down */
+    margin-top: 20px; /* Adjust the value as needed */
+    /* The rest of your button styles... */
+}
+
+.Registration h2 {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 20px;
+    text-align: center;
+    color: rgb(226, 245, 14);
+}
+
+.input-name {
+    width: 80%;
+    margin: 9px 30px;
+    display: block;
+}
+
+.lock {
+    padding: 8px 11px;
+    display: block;
+}
+
+.name {
+    width: 45%;
+    padding: 8px 0 8px 40px;
+}
+
+.text-name {
+    width: 100%;
+    padding: 8px 0 8px 40px;
+    padding-right: 5px;
+}
+
+.input-name i {
+    position: absolute;
+    font-size: 18px;
+    color: green;
+    border-right: 0px solid #000000;
+    padding-right: 1px;
+}
+
+.locks {
+    width: 0px;
+    height: auto;
+    overflow: visible;
+    padding-left: 12px;
+    padding-top: 7px;
+    display: flex;
+    justify-content: center;
+}
+
+.input-name label {
+    margin-right: 32px;
+    color: rgb(255, 234, 0); /* Replace 'blue' with the desired font color */
+    font-size: 20px;
+    display: inline-block;
+}
+
+.radio-button {
+    /* Increase the scale to make the circles larger */
+    transform: scale(1.6); /* You can adjust the scale value as needed */
+    margin-right: 5px;
+    position:relative; /* Add some spacing between the radio button and label */
+}
+
+.check-button {
+    transform: scale(1.6);
+    margin-right: 10px;
+}
+
+select.Package {
+    padding-left: 30px;
+    border-left: 1px solid #000000;
+    font-size: larger;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 300;
+
+}
+
+/* Basic styles for the button */
+.button {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: white;
+    font-weight: bold;
+    width: 200px;
+    font-size: large;
+    overflow: hidden;
+    background: transparent;
+    background-color: #fbc400;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+}
+
+/* Hover effect */
+.button:hover {
+    border: none;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+}
+
+/* Mobile styles */
+  /* Minimum width 301px to 575px */
+@media only screen and (min-width: 301px) and (max-width: 575px) {
+    /* Reset common styles */
+    body {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    div.welcome {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 30px;
+        font-size: 24px;
+    }
+
+    .button {
+        width: 80%;
+    }
+
+    .banner {
+        height: 150px;
+    }
+
+
+    .whatsapp-icon,
+    .money-icon {
+        font-size: 18px;
+        margin-bottom: 3px;
+    }
+
+    .whatsapp-number,
+    .jazzcash-number {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Minimum width 576px to 768px */
+@media only screen and (min-width: 575px) and (max-width: 768px) {
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    div.welcome {
+        font-size: 28px;
+    }
+
+    .button {
+        width: 90%;
+    }
+
+    .banner {
+        height: 180px;
+    }
+
+    .whatsapp-icon,
+    .money-icon {
+        font-size: 22px;
+        margin-bottom: 4px;
+    }
+
+    .whatsapp-number,
+    .jazzcash-number {
+        font-size: 15px;
+    }
+}
+
+/* Minimum width 769px to 992px */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    div.welcome {
+        font-size: 32px;
+    }
+
+    .button {
+        width: 80%;
+    }
+
+    .banner {
+        height: 220px;
+    }
+
+    .whatsapp-icon,
+    .money-icon {
+        font-size: 26px;
+        margin-bottom: 4px;
+    }
+
+    .whatsapp-number,
+    .jazzcash-number {
+        font-size: 16px;
+    }
+}
+
+/* Minimum width 993px to 1200px */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    div.welcome {
+        font-size: 36px;
+    }
+
+    .button {
+        width: 70%;
+    }
+
+    .banner {
+        height: 260px;
+    }
+
+    .whatsapp-icon,
+    .money-icon {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .whatsapp-number,
+    .jazzcash-number {
+        font-size: 18px;
+    }
+}
+
+
+
+
+/* Minimum width 1200px to 1600px */
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    div.welcome {
+        font-size: 36px;
+    }
+
+    .button {
+        width: 70%;
+    }
+
+    .banner {
+        height: 260px;
+    }
+
+    .whatsapp-icon,
+    .money-icon {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .whatsapp-number,
+    .jazzcash-number {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
