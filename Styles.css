@@ -18,7 +18,7 @@ body {
     width: 100%;
     height: 739px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url('register.jpg.jpg');
+        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -106,34 +106,39 @@ div.Registration {
 .input-name label {
     margin-right: 32px;
     color: rgb(255, 234, 0); /* Replace 'blue' with the desired font color */
-    font-size: 20px;
+    font-size: 18px;
     display: inline-block;
 }
 
 .radio-button {
     /* Increase the scale to make the circles larger */
-    transform: scale(1.6); /* You can adjust the scale value as needed */
+    transform: scale(1.6); /* You can adjust round box the scale value as needed */
     margin-right: 5px;
     position:relative; /* Add some spacing between the radio button and label */
 }
 
 .check-button {
-    transform: scale(1.6);
+    transform: scale(1.6);  /*   check button box big and small */
     margin-right: 10px;
 }
 
-select.Package {
-    padding-left: 30px;
-    border-left: 1px solid #000000;
-    font-size: larger;
-    border-radius: 25px;
-    outline: none;
-    overflow: hidden;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-weight: 300;
+.input-name i.locks{        /* Rs icon change position by padding */
+padding-top: 9px;
 
 }
+
+.input-name select.Package {
+    font-size: 14px;
+    padding: 8px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    outline: none;
+    width: 180px; /* Set the width as needed */
+    font-weight: 300;
+    padding-left: 30px;
+}
+
+
 
 /* Basic styles for the button */
 .button {
@@ -162,7 +167,45 @@ select.Package {
     border: 2px solid #ffffff;
 }
 
-/* Mobile styles */
+.whatsapp-icon{
+
+    color: green;
+  padding-left: 20px;
+  padding-top: 10px;
+inline-size: 30px;
+}
+
+.whatsapp-number{
+color: #ffffff;
+font-weight: bold;
+
+}
+
+
+.money-icon{
+color: green;
+  padding-left: 20px;
+  padding-top: 20px;
+inline-size: 40px;
+}
+
+.jazzcash-number{
+    color: #ffffff;
+font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/******************* Mobile styles***************/
   /* Minimum width 301px to 575px */
 @media only screen and (min-width: 301px) and (max-width: 575px) {
     /* Reset common styles */
@@ -174,6 +217,30 @@ select.Package {
         background-attachment: fixed;
     }
 
+
+    .radio-button {
+        transform: scale(2.5);
+        margin-right: 5px;
+        position: relative;
+    }
+
+    .check-button {
+        transform: scale(1.2);
+        position: relative; /* You can adjust the scale value as needed */
+
+
+    }
+    .check-label {
+        display: flex; /* Use flexbox to make the label and checkbox inline */
+        align-items: center;
+        font-size: 5px; /* Align items vertically center */
+    }
+    
+    
+
+
+
+
     div.welcome {
         padding-left: 10px;
         padding-right: 10px;
@@ -181,14 +248,79 @@ select.Package {
         font-size: 24px;
     }
 
+    .form-container{
+width: 250px;
+height: auto;
+padding-right: 56px;
+
+
+    }
+
+    .input-name .radio-button{
+width: 7px;
+
+
+    }
+
     .button {
-        width: 80%;
+        width: 100%;
     }
 
     .banner {
         height: 150px;
+
     }
 
+    .container {
+     
+        padding-top: 90px;
+      
+    }
+
+    .Registration {
+        width: 85%;
+        padding: 65px;
+   
+    }
+
+    .whatsapp-icon{
+
+        color: green;
+      padding-left: 20px;
+      padding-top: 10px;
+    inline-size: 20px;
+    }
+
+    .whatsapp-number{
+color: #ffffff;
+font-weight: bold;
+
+    }
+.money-icon{
+    color: green;
+      padding-left: 20px;
+      padding-top: 10px;
+    inline-size: 20px;
+    }
+
+    .jazzcash-number{
+        color: #ffffff;
+font-weight: bold;
+
+    }
+
+
+
+    
+}
+
+
+   
+
+    select.Package {
+        width: 100%;
+        padding-sleft: 35px;
+    }
 
     .whatsapp-icon,
     .money-icon {
@@ -351,19 +483,3 @@ select.Package {
         font-size: 18px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
