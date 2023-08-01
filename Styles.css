@@ -18,7 +18,7 @@ body {
     width: 100%;
     height: 739px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url('file:///C:/Users/Laptop%20Wala/Documents/new%20website/register.jpg.jpg');
+        url('register.jpg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
